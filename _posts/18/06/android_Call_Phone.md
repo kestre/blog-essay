@@ -44,9 +44,9 @@ if (ContextCompat.checkSelfPermission(MainActivity.this,
     if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,
         Manifest.permission.CALL_PHONE)){
         // 返回值：
-        //如果app之前请求过该权限,被用户拒绝, 这个方法就会返回true.
-        //如果用户之前拒绝权限的时候勾选了对话框中”Don’t ask again”的选项,那么这个方法会返回false.
-        //如果设备策略禁止应用拥有这条权限, 这个方法也返回false.
+        // 如果app之前请求过该权限,被用户拒绝, 这个方法就会返回true.
+        // 如果用户之前拒绝权限的时候勾选了对话框中”Don’t ask again”的选项,那么这个方法会返回false.
+        // 如果设备策略禁止应用拥有这条权限, 这个方法也返回false.
         // 弹窗需要解释为何需要该权限，再次请求授权
         Toast.makeText(MainActivity.this, "请授权！", Toast.LENGTH_LONG).show();
         // 帮跳转到该应用的设置界面，让用户手动授权
